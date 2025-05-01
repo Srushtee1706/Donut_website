@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+</head>
+<body>
+
+  <div class="first" id="home">
+    
+    <div id="logo">
+      <img src="ChatGPT Image Apr 6, 2025, 02_53_16 PM.png" alt="logo">
+    </div>
+    <div id="navbar">
+
+      <a href="#home">HOME</a>
+      <a href="#menu">Menu</a>
+      <a href="#middle">Newly Launch</a>
+      <a href="#contact">Contact us</a>
+    </div>
+    <div class="banner-content">
+      <h1 id="h1">Velvet Crumbs</h1>
+      <p id="ppara">""Handcrafted with passion,
+        Golden-fried to perfection. <br>
+        Every bite’s a celebration, 
+        Taste the doughnut affection!"</p>
+      <button id="shop" onclick="shopNow()">Shop now</button>
+      
+    </div>
+    
+   
+  
+  </div>
+  
+
+  <div class="wrapper" id="menu">
+    <div id="heading2">
+      <div class="container">
+        <div id="image">
+          <div class="item">
+            <img src="do2.jpg" alt="Glazed Donut">
+            <p class="name">Glazed Donut</p>
+            <p class="price">$2.50</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="item">
+            <img src="do3.png" alt="Jelly Donut">
+            <p class="name">Jelly Donut</p>
+            <p class="price">$3.00</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="item">
+            <img src="do4.webp" alt="Boston Cream">
+            <p class="name">Boston Cream</p>
+            <p class="price">$3.50</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="item">
+            <img src="do6.webp" alt="Strawberry Frosted">
+            <p class="name">Strawberry Frosted</p>
+            <p class="price">$3.00</p>
+            <button>Add to Cart</button>
+          </div>
+
+
+
+
+        </div>
+        
+        <button class="arrow" id="nextbtn">&#9654;</button>
+      </div>
+      
+    </div>
+  </div>
+
+  <div id="middle" >
+    <div id="img1"><img src="four.png" alt=""></div>
+    <div id="head">
+      <h1>Newly-Launch</h1>
+    </div>
+      <div id="para">
+       <p>Our freshly launched 4-donut pack is the perfect treat! 
+         Indulge in four deliciously crafted donuts—each with unique flavors,
+         colorful sprinkles, and melt-in-your-mouth goodness. Whether you're 
+         sharing with friends or treating yourself, this sweet box of joy is made 
+         to delight every bite.From classic favorites to fun new twists, there's
+         a flavor for every craving. Perfectly packaged and ready to enjoy, it's sweetness
+         made simple. Grab yours now and taste the happiness!
+
+       </p>
+       <div id="btn">
+        <button id="button" onclick="button">Shop Now</button>
+       </div>
+       
+      </div>
+  </div>
+  <div>
+
+  </div>
+  
+
+  <div id="sidebar">
+       <a href="#home" id="home-btn" title="Home"><i class="fas fa-home"></i></a>
+       <a href="#" id="search-btn" title="Search" title="Search"><i class="fas fa-search"></i></a>
+       <a href="#" id="favorites-btn" title="Favorites" title="Favourites"><i class="fas fa-heart"></i></a>
+       <a href="#" id="cart-btn" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+       <a href="#contact" id="contact-btn" title="Profile"><i class="fas fa-user"></i></a>
+  </div>
+  <div class="search-container" id="search-container">
+    <input type="text" id="search-input" placeholder="Search donuts...">
+    <button id="search-submit"><i class="fas fa-search"></i></button>
+    <span class="close-btn" id="close-search"><i class="fas fa-times"></i></span>
+</div>
+
+<!-- Favorites Section -->
+<div id="favorites-section">
+    <h2>Your Favorites</h2>
+    <div id="favorites-list"></div>
+    <span class="close-btn" id="close-favorites"><i class="fas fa-times"></i></span>
+</div>
+
+<!-- Cart Section -->
+<div id="cart-section">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <span class="close-btn" id="close-cart"><i class="fas fa-times"></i></span>
+</div>
+
+
+
+  <div id="review-wrapper">
+    <div id="review-section">
+        <h2>What Our Customers Say</h2>
+        
+        <div class="review-container">
+            <button class="custom-arrow left" onclick="slideLeft()">&#10094;</button>
+            <div class="review-slider" id="reviewSlider">
+                <div class="review-card">"Amazing taste and super fresh donuts!" - Aditi</div>
+                <div class="review-card">"The packaging is lovely and delivery was quick." - Rahul</div>
+                <div class="review-card">"Great variety of flavors, loved it!" - Sneha</div>
+                <div class="review-card">"Perfect treat for my birthday!" - Vikram</div>
+                <div class="review-card">"Absolutely delicious and worth it!" - Priya</div>
+            </div>
+            <button class="custom-arrow right" onclick="slideRight()">&#10095;</button>
+        </div>
+        
+        <form id="review-form">
+            <h3>Leave Your Review</h3>
+            <input type="text" placeholder="Your Name" id="name" required>
+            <textarea placeholder="Your Review" id="reviewText" required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+</div>
+
+  <section class="shop-contact-section" id="contact">
+    <div class="shop-contact-box">
+      <h2>Contact Our Shop</h2>
+      <ul class="shop-details">
+        <li><strong>Shop Name:</strong> Velvet Crumbs</li>
+        <li><strong>Owner:</strong> Srushtee</li>
+        <li><strong>Email:</strong> velvetcrumbs00@gmail.com</li>
+        <li><strong>Phone:</strong> +91 9000000000</li>
+        <li><strong>Location:</strong> FC ROAD PUNE</li>
+      </ul>
+    </div>
+  </section>
+  
+  
+  
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>
