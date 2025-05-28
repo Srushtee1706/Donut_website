@@ -21,4 +21,21 @@ This project is ideal for anyone looking to understand front-end development and
 - HTML5
 - CSS3
 - JavaScript (ES6)
+- 
+## 📸 Screenshots
+
+### 🏠 Homepage  
+![Homepage](donut_photos/home.png)
+
+### 🍩 Menu Section  
+![Menu](donut_photos/Menu.png)
+
+### ✨ Newly Launched Donuts  
+![New Launch](donut_photos/newly_launch.png)
+
+### 💬 Customer Reviews  
+![Reviews](donut_photos/Custoner_Review.png)
+
+### 📞 Contact Us  
+![Contact Us](donut_photos/Contact_us.png)
 
